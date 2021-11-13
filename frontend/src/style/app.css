@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #123;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.app .app-content {
+  font-family: 'Montserrat', sans-serif;
+  width: 70%;
+  height: 75%;
+  background-color: rgb(224, 222, 222);
+  border: 4px solid rgb(22, 22, 22);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.app .app-content .header {
+  width: 100%;
+  height: 15%;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 1em 1em 0 0;
+  background-color: whitesmoke;
+  display: flex;
+  margin-bottom: 1em;
+}
+.app .app-content .header .left-header {
+  width: 20%;
+  height: 100%;
+  justify-content: right;
+}
+.app .app-content .header .left-header > img {
+  height: 100%;
+  object-fit: fill;
+}
+.app .app-content .header .center-header {
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .app-content .header .right-header {
+  flex: 1 1 20%;
+}
+
+.app .app-content .calculadora {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 0 0 1em 1em;
+  background-color: whitesmoke;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+@media all and (max-width: 910px) {
+  .app .app-content {
+    width: 95%;
+    height: 95%;
+  }
+  .app .app-content .header {
+    font-size: 100%;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+  .app .app-content .header .left-header {
+    width: 30%;
+  }
+  .app .app-content .header .center-header {
+    font-size: 80%;
+    width: 50%;
+  }
+}

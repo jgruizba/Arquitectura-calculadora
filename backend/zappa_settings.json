@@ -1,0 +1,10 @@
+{
+    "arquitecturaSC": {
+        "app_function": "app.app",
+        "profile_name": "default",
+        "project_name": "backend",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-edxx9oliv",
+        "aws_region":"sa-east-1"
+    }
+}

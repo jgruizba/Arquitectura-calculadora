@@ -2,7 +2,7 @@ class CambioBase():
   CARACTERES = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
   def basen_basedec(self, numero, base):
-    partes = numero.split('.')
+    partes = numero.upper().split('.')
     num_conv = 0
     for i, c in enumerate(reversed(partes[0])):
       num_conv += CambioBase.CARACTERES.find(c) * (base ** i)
@@ -19,7 +19,7 @@ class CambioBase():
     while valor > 0:
       entero += CambioBase.CARACTERES[valor % base]
       valor = int(valor / base)
-    num_conv = entero[::-1]
+    num_conv = entero[::-1] if entero != '' else '0'
     if len(partes) > 1:
       valor = int(partes[1]) / (10 ** len(partes[1]))
       while valor > 10 ** -9:
@@ -30,7 +30,7 @@ class CambioBase():
 
   def max_num(self, numero:str):
     mayor = 0
-    for c in numero.replace('.', '', 1):
+    for c in numero.replace('.', '', 1).upper():
       indice = CambioBase.CARACTERES.find(c)
       if indice == -1:
         mayor = 100

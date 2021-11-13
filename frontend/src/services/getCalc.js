@@ -1,5 +1,5 @@
 const getCalcService = async ({ baseO, input, baseC }) => {
-  const url = `http://127.0.0.1:5000/calc`//`https://jap6lizwd3.execute-api.sa-east-1.amazonaws.com/arquitecturaSC/calc`
+  const url = `https://jap6lizwd3.execute-api.sa-east-1.amazonaws.com/arquitecturaSC/calc`
 
   const settings = {
     method: 'POST',
